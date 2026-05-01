@@ -355,6 +355,7 @@ Repos:
 - fanjinfei/grapheekdb
 - feichai0017/NoKV
 - firstbatchxyz/hollowdb
+- fjall-rs/fjall
 - genderev/assassin
 - gfredericks/quinedb
 - google/leveldb

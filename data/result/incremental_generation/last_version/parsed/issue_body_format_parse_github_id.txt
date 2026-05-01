@@ -355,6 +355,7 @@ Repos:
 - 74678263 # repo:fanjinfei/grapheekdb
 - 841059560 # repo:feichai0017/NoKV
 - 606800919 # repo:firstbatchxyz/hollowdb
+- 719588139 # repo:fjall-rs/fjall
 - 292049131 # repo:genderev/assassin
 - 67936193 # repo:gfredericks/quinedb
 - 23405758 # repo:google/leveldb
