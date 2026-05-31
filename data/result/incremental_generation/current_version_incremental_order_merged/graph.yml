@@ -8,6 +8,7 @@ data:
     - 893031915 # repo:HelixDB/helix-db
     - 77385607 # repo:JanusGraph/janusgraph
     - 1071734040 # repo:LadybugDB/ladybug
+    - 1183612568 # repo:NodeDB-Lab/nodedb
     - 92834468 # repo:Pometry/Raphtory
     - 45098765 # repo:PureSolTechnologies/DuctileDB
     - 84458512 # repo:RedisGraph/RedisGraph

@@ -3,6 +3,7 @@ type: Tech-1
 data:
   github_repo:
     - 534109388 # repo:EuclidOLAP/EuclidOLAP
+    - 1183612568 # repo:NodeDB-Lab/nodedb
     - 86868560 # repo:TileDB-Inc/TileDB
     - 31373521 # repo:autermann/scidb
     - 96580430 # repo:datajaguar/jaguardb

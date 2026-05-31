@@ -30,6 +30,7 @@ data:
     - 19816070 # repo:MariaDB/server
     - 135423959 # repo:Mckoi/origsqldb
     - 316690542 # repo:MonetDB/MonetDB
+    - 1183612568 # repo:NodeDB-Lab/nodedb
     - 684046299 # repo:OpenTenBase/OpenTenBase
     - 41443810 # repo:Postgres-XL/Postgres-XL
     - 605546193 # repo:RayforceDB/rayforce
@@ -108,6 +109,7 @@ data:
     - 392839612 # repo:firebolt-db/firebolt-python-sdk
     - 305513242 # repo:fluree/db
     - 600860 # repo:fosslc/Ingres
+    - 1127534604 # repo:garden-co/jazz
     - 29210020 # repo:gavioto/fastdb
     - 95817032 # repo:geldata/gel
     - 148087762 # repo:georgia-tech-db/eva
@@ -169,6 +171,7 @@ data:
     - 5665061 # repo:radare/sdb
     - 117920609 # repo:radondb/radon
     - 206686299 # repo:rayokota/kareldb
+    - 975773453 # repo:reifydb/reifydb
     - 393235957 # repo:risinglightdb/risinglight
     - 453068084 # repo:risingwavelabs/risingwave
     - 23247808 # repo:rqlite/rqlite
