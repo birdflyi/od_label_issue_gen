@@ -5,6 +5,7 @@ Type: Tech-1
 Repos:
 
 - EuclidOLAP/EuclidOLAP
+- NodeDB-Lab/nodedb
 - TileDB-Inc/TileDB
 - autermann/scidb
 - datajaguar/jaguardb
@@ -56,6 +57,7 @@ Repos:
 - LinkedInAttic/sensei
 - Lona-Development/Server
 - Nexedi/neoppod
+- NodeDB-Lab/nodedb
 - PoloDB/PoloDB
 - SequoiaDB/SequoiaDB
 - SnellerInc/sneller
@@ -208,6 +210,7 @@ Repos:
 - HelixDB/helix-db
 - JanusGraph/janusgraph
 - LadybugDB/ladybug
+- NodeDB-Lab/nodedb
 - Pometry/Raphtory
 - PureSolTechnologies/DuctileDB
 - RedisGraph/RedisGraph
@@ -308,6 +311,7 @@ Repos:
 - aerospike/aerospike-server
 - akrylysov/pogreb
 - alash3al/redix
+- ankur-anand/unisondb
 - apache/cassandra
 - apache/geode
 - apache/ignite
@@ -616,6 +620,7 @@ Repos:
 - MariaDB/server
 - Mckoi/origsqldb
 - MonetDB/MonetDB
+- NodeDB-Lab/nodedb
 - OpenTenBase/OpenTenBase
 - Postgres-XL/Postgres-XL
 - RayforceDB/rayforce
@@ -694,6 +699,7 @@ Repos:
 - firebolt-db/firebolt-python-sdk
 - fluree/db
 - fosslc/Ingres
+- garden-co/jazz
 - gavioto/fastdb
 - geldata/gel
 - georgia-tech-db/eva
@@ -755,6 +761,7 @@ Repos:
 - radare/sdb
 - radondb/radon
 - rayokota/kareldb
+- reifydb/reifydb
 - risinglightdb/risinglight
 - risingwavelabs/risingwave
 - rqlite/rqlite
@@ -861,6 +868,7 @@ Repos:
 
 - DeployQL/LintDB
 - HelixDB/helix-db
+- NodeDB-Lab/nodedb
 - RijinRaju/octanedb
 - Shannon-Data/ShannonBase
 - activeloopai/deeplake
@@ -894,6 +902,7 @@ Repos:
 - MonetDB/MonetDB
 - StarRocks/StarRocks
 - VictoriaMetrics/VictoriaMetrics
+- ankur-anand/unisondb
 - apache/accumulo
 - apache/cassandra
 - apache/drill

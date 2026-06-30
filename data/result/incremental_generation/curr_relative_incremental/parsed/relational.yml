@@ -1,7 +1,0 @@
-name: Database - Relational
-type: Tech-1
-data:
-  github_repo:
-    - 1183612568 # repo:NodeDB-Lab/nodedb
-    - 1127534604 # repo:garden-co/jazz
-    - 975773453 # repo:reifydb/reifydb
