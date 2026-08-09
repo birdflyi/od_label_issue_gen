@@ -1,11 +1,11 @@
-# wiget_autogen_issue_body_for_opendigger_submiting_labeled_data_issue
-A wiget  to auto-generate issue_body for `submiting_labeled_data_issue` in [open-digger](https://github.com/X-lab2017/open-digger) repository 
+# od_label_issue_gen
+A widget to auto-generate issue bodies for submitting labeled data issues in the [open-digger](https://github.com/X-lab2017/open-digger) repository.
 
 Use the git command to update submodules:
 
 ```bash
-$ git clone git@github.com:birdflyi/wiget_autogen_issue_body_for_opendigger_submiting_labeled_data_issue.git
-$ cd wiget_autogen_issue_body_for_opendigger_submiting_labeled_data_issue/db_feature_data_fusion/
+$ git clone git@github.com:birdflyi/od_label_issue_gen.git
+$ cd od_label_issue_gen/db_feature_data_fusion/
 $ git pull
 $ git submodule deinit --all
 $ git submodule sync --recursive
