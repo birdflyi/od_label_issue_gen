@@ -4,8 +4,10 @@ data:
   github_repo:
     - 248094 # repo:4store/4store
     - 8335020 # repo:BrightstarDB/BrightstarDB
+    - 27594187 # repo:ad-freiburg/qlever
     - 6235870 # repo:ansell/openrdf-sesame
     - 7437073 # repo:apache/jena
+    - 43734923 # repo:apache/rya
     - 111333972 # repo:arun1729/cog
     - 48451041 # repo:blazegraph/database
     - 20537104 # repo:cayleygraph/cayley
@@ -17,5 +19,6 @@ data:
     - 305513242 # repo:fluree/db
     - 207484782 # repo:gurneyalex/cubicweb
     - 754873 # repo:njh/redstore
+    - 133687025 # repo:oxigraph/oxigraph
     - 16710751 # repo:quoll/mulgara
     - 198466472 # repo:terminusdb/terminusdb

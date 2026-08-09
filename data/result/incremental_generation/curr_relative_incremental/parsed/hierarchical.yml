@@ -2,6 +2,4 @@ name: Database - Hierarchical
 type: Tech-1
 data:
   github_repo:
-    - 158975124 # repo:apache/iotdb
-    - 160999 # repo:apache/zookeeper
     - 1128123594 # repo:volcengine/OpenViking

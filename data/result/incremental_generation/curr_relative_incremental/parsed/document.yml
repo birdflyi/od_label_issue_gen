@@ -1,0 +1,35 @@
+name: Database - Document
+type: Tech-1
+data:
+  github_repo:
+    - 234091935 # repo:DO-SAY-GO/sirdb
+    - 1234582852 # repo:ExtendDB/extenddb
+    - 8313554 # repo:Lazer-Database/Lazer-Database
+    - 1111440285 # repo:MauricioPerera/LOKIVECTOR
+    - 836018246 # repo:Schema-JS/schema-js
+    - 129436009 # repo:SleekDB/SleekDB
+    - 8729689 # repo:Tokutek/mongo
+    - 813243891 # repo:Unconcurrent/SoloDB
+    - 1182378589 # repo:VincentKaufmann/GitDB
+    - 223462217 # repo:apache/incubator-resilientdb
+    - 714074 # repo:apache/pouchdb
+    - 341374920 # repo:apache/solr
+    - 249981301 # repo:aviondb/aviondb
+    - 1296163320 # repo:barrel-db/barrel
+    - 18893367 # repo:blevesearch/bleve
+    - 138411034 # repo:chaisql/chai
+    - 270858421 # repo:datalevin/datalevin
+    - 920805662 # repo:documentdb/documentdb
+    - 1171244520 # repo:inder/salvobase
+    - 25364889 # repo:jbasiglio/fueldb
+    - 1230283259 # repo:katehonz/barabaDB
+    - 5844474 # repo:kurrent-io/KurrentDB
+    - 23315232 # repo:litedb-org/LiteDB
+    - 47479424 # repo:nucypher/zerodb
+    - 334274271 # repo:opensearch-project/OpenSearch
+    - 48617634 # repo:orbitdb/orbitdb
+    - 5665061 # repo:radareorg/sdb
+    - 664816265 # repo:scratchdata/scratchdata
+    - 57401138 # repo:skaiworldwide-oss/agensgraph
+    - 36992044 # repo:sphinxsearch/sphinx
+    - 1242559745 # repo:zaydmulani09/vecdb

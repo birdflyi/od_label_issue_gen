@@ -14,12 +14,15 @@ data:
     - 36349344 # repo:apache/trafodion
     - 18129915 # repo:baidu/tera
     - 182849188 # repo:delta-io/delta
-    - 191676087 # repo:eleme/lindb
     - 1584552 # repo:hypertable/hypertable
     - 13124802 # repo:influxdata/influxdb
+    - 8039659 # repo:kairosdb/kairosdb
     - 191442206 # repo:kashirin-alex/swc-db
+    - 1230283259 # repo:katehonz/barabaDB
+    - 191676087 # repo:lindb/lindb
     - 473235285 # repo:polarsignals/frostdb
     - 5349565 # repo:prestodb/presto
-    - 28449431 # repo:scylladb/scylla
+    - 10081109 # repo:rax-maas/blueflood
+    - 28449431 # repo:scylladb/scylladb
     - 41209174 # repo:strapdata/elassandra
     - 872645739 # repo:tidesdb/tidesdb

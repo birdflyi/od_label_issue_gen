@@ -1,0 +1,256 @@
+Label: Array
+
+Type: Tech-1
+
+Repos:
+
+- NumstoreDB/Numstore
+- hexxla/hexxladb
+
+Label: Document
+
+Type: Tech-1
+
+Repos:
+
+- DO-SAY-GO/sirdb
+- ExtendDB/extenddb
+- Lazer-Database/Lazer-Database
+- MauricioPerera/LOKIVECTOR
+- Schema-JS/schema-js
+- SleekDB/SleekDB
+- Tokutek/mongo
+- Unconcurrent/SoloDB
+- VincentKaufmann/GitDB
+- apache/incubator-resilientdb
+- apache/pouchdb
+- apache/solr
+- aviondb/aviondb
+- barrel-db/barrel
+- blevesearch/bleve
+- chaisql/chai
+- datalevin/datalevin
+- documentdb/documentdb
+- inder/salvobase
+- jbasiglio/fueldb
+- katehonz/barabaDB
+- kurrent-io/KurrentDB
+- litedb-org/LiteDB
+- nucypher/zerodb
+- opensearch-project/OpenSearch
+- orbitdb/orbitdb
+- radareorg/sdb
+- scratchdata/scratchdata
+- skaiworldwide-oss/agensgraph
+- sphinxsearch/sphinx
+- zaydmulani09/vecdb
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- GraphLite-AI/GraphLite
+- IssunDB/issun-db
+- JetBrains/youtrackdb
+- ad-freiburg/qlever
+- alibaba/neug
+- antflydb/antfly
+- apache/hugegraph
+- ayoubnabil/aiondb
+- estebanrfp/gdb
+- katehonz/barabaDB
+- nambok/mentedb
+- namidb/namidb
+- oxigraph/oxigraph
+- skaiworldwide-oss/agensgraph
+- sochdb/sochdb
+- softmaxdata/engram
+- yantrikos/yantrikdb
+
+Label: Hierarchical
+
+Type: Tech-1
+
+Repos:
+
+- volcengine/OpenViking
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- 539hex/zu
+- ExtendDB/extenddb
+- GNS-Foundation/mobydb
+- Netflix/dynomite
+- OpenAtomFoundation/pikiwidb
+- Tencent/MMKV
+- TieredMemDB/TieredMemDB
+- antithesishq/valthree
+- apache/kvrocks
+- basho/bitcask
+- cockroachdb/pebble
+- dicedb/dicedb
+- dlitz/resin
+- edwinkys/oasysdb
+- ennorehling/ennodb
+- guycipher/k4
+- hydraide/hydraide
+- isar/hive
+- kairosdb/kairosdb
+- leanstore/leanstore
+- lispking/kvdb
+- lotusdblabs/lotusdb
+- nubskr/nubmq
+- nutsdb/nutsdb
+- orbitdb/orbitdb
+- outr/HaloDB
+- oxia-db/oxia
+- pmwkaa/sophia
+- rax-maas/blueflood
+- replikativ/datahike
+- rosedblabs/rosedb
+- scylladb/scylladb
+- skaiworldwide-oss/agensgraph
+- sklad-dev/Sklad
+- spotify/sparkey
+- storacha/pail
+- stripe-archive/sequins
+- thetarby/helindb
+- tidwall/pogocache
+- yantrikos/yantrikdb
+- ytsaurus/ytsaurus
+
+Label: Object Oriented
+
+Type: Tech-1
+
+Repos:
+
+- ArcadeData/arcadedb
+- Log2n-io/Typhon
+- glycerine/shore-mt
+- objectbox
+- oracle/coherence
+
+Label: RDF
+
+Type: Tech-1
+
+Repos:
+
+- ad-freiburg/qlever
+- apache/rya
+- oxigraph/oxigraph
+
+Label: Relational
+
+Type: Tech-1
+
+Repos:
+
+- ArroyoSystems/arroyo
+- BemiHQ/BemiDB
+- BlazingDB/blazingsql
+- JagritGumber/evolvsql
+- JakeRoggenbuck/RedoxQL
+- JakeRoggenbuck/kronicler
+- LucidDB/luciddb
+- OxidizeLabs/ferrite
+- SouravRoy-ETL/slothdb
+- SwellDB/SwellDB
+- TIBCOSoftware/snappydata
+- akumuli/Akumuli
+- antoniosarosi/mkdb
+- apache/cloudberry
+- apache/horaedb
+- apache/incubator-tajo
+- ariasql/ariasql
+- ayoubnabil/aiondb
+- carlosbarbosamexico/narayana
+- cube2222/octosql
+- darshan117/BroSql
+- databendlabs/databend
+- earonesty/lakeql
+- facebookarchive/webscalesql-5.6
+- georgia-tech-db/evadb
+- graemedouglas/LittleD
+- hydradatabase/columnar
+- hyparam/squirreling
+- infino-ai/infino
+- kashyap-devansh/Ark
+- lasect/discodb
+- maxnilz/sboxdb
+- multigres/multigres
+- mzinsmeister/OxidSQL
+- nukep/llamadb
+- oceanbase/seekdb
+- open-gpdb/gpdb
+- quqiangsheng/abhot
+- radareorg/sdb
+- shuruheel/mnestic
+- skaiworldwide-oss/agensgraph
+- skel84/allocdb
+- sochdb/sochdb
+- tigerbeetle/tigerbeetle
+- tursodatabase/libsql
+- tursodatabase/turso
+- ubco-db/EmbedDB
+- villagesql/villagesql-server
+- viyadb/viyadb
+- warehouse-pg/warehouse-pg
+
+Label: Search Engine
+
+Type: Tech-1
+
+Repos:
+
+- apache/solr
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- FeatureBaseDB/featurebase
+- IssunDB/issun-db
+- MauricioPerera/LOKIVECTOR
+- VincentKaufmann/GitDB
+- alibaba/zvec
+- antflydb/antfly
+- ayoubnabil/aiondb
+- barrel-db/barrel
+- blevesearch/bleve
+- edwinkys/oasysdb
+- endee-io/endee
+- featureform/featureform
+- ferres-db/ferres-db
+- hexxla/hexxladb
+- hicder/muopdb
+- jose-compu/logosdb
+- nambok/mentedb
+- nubskr/satoriDB
+- oceanbase/seekdb
+- sochdb/sochdb
+- weaviate/weaviate
+- yantrikos/yantrikdb
+- zaydmulani09/vecdb
+
+Label: Wide column
+
+Type: Tech-1
+
+Repos:
+
+- kairosdb/kairosdb
+- katehonz/barabaDB
+- lindb/lindb
+- rax-maas/blueflood
+- scylladb/scylladb
+

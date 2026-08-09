@@ -2,13 +2,12 @@ name: Database - Object Oriented
 type: Tech-1
 data:
   github_repo:
-    - 107504377 # repo:ADBSQL/AntDB
     - 37905036 # repo:Alachisoft/TayzGrid
+    - 396867188 # repo:ArcadeData/arcadedb
     - 681142 # repo:Bobris/BTDB
-    - 52080367 # repo:CUBRID/cubrid
     - 329729926 # repo:CondensationDB/Condensation-java
     - 8799170 # repo:DevrexLabs/OrigoDB
-    - 516821813 # repo:HydrasDB/hydra
+    - 366298992 # repo:Log2n-io/Typhon
     - 1244027 # repo:ModeShape/modeshape
     - 1040715058 # repo:Relatude/Relatude.DB
     - 150752008 # repo:SapphireDb/SapphireDb
@@ -17,35 +16,26 @@ data:
     - 569871553 # repo:VeloxDB/VeloxDB
     - 206403 # repo:apache/jackrabbit
     - 246343828 # repo:atoti/atoti
-    - 40787594 # repo:aur-archive/gigabase
     - 396856161 # repo:authzed/spicedb
-    - 644742603 # repo:cloudberrydb/cloudberrydb
     - 95070401 # repo:devrexlabs/memstate
     - 15001136 # repo:etoile/CoreObject
     - 145843258 # repo:eyedb/eyedb
     - 42143916 # repo:fern4lvarez/piladb
     - 240387847 # repo:gaia-platform/GaiaPlatform
-    - 95817032 # repo:geldata/gel
+    - 6433550 # repo:glycerine/shore-mt
     - 32137101 # repo:google-code-export/twig-persist
     - 48279725 # repo:goshawkdb/server
     - 204261394 # repo:iboxdb/db4o-gpl
     - 5453989 # repo:jankotek/mapdb
     - 37340459 # repo:jayhopeter/NDatabase
-    - 119234782 # repo:jonahharris/osdb-beaglesql
     - 1776883 # repo:kimchy/compass
-    - 442441933 # repo:mabel-dev/opteryx
     - 89699591 # repo:magma-database/magma
     - 25225465 # repo:markmeeus/MarcelloDB
     - 160528020 # repo:mateusfreira/nun-db
     - 273564373 # repo:morecraf/Siaqodb
-    - 351806852 # repo:neondatabase/neon
-    - 79901405 # repo:objectbox/objectbox-java
+    - 242776849 # repo:oracle/coherence
     - 7083240 # repo:orientechnologies/orientdb
-    - 432844875 # repo:orioledb/orioledb
-    - 660776503 # repo:paradedb/paradedb
     - 37285717 # repo:pilgr/Paper
-    - 14702444 # repo:pipelinedb/pipelinedb
-    - 927442 # repo:postgres/postgres
     - 90349373 # repo:profanedb/ProfaneDB
     - 1917262 # repo:realm/realm-core
     - 16457385 # repo:sirlordt/NeoDatis

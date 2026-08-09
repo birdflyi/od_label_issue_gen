@@ -1,0 +1,9 @@
+name: Database - Wide Column
+type: Tech-1
+data:
+  github_repo:
+    - 8039659 # repo:kairosdb/kairosdb
+    - 1230283259 # repo:katehonz/barabaDB
+    - 191676087 # repo:lindb/lindb
+    - 10081109 # repo:rax-maas/blueflood
+    - 28449431 # repo:scylladb/scylladb

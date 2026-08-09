@@ -1,0 +1,54 @@
+name: Database - Relational
+type: Tech-1
+data:
+  github_repo:
+    - 621929252 # repo:ArroyoSystems/arroyo
+    - 883391427 # repo:BemiHQ/BemiDB
+    - 150149024 # repo:BlazingDB/blazingsql
+    - 1188294539 # repo:JagritGumber/evolvsql
+    - 915978190 # repo:JakeRoggenbuck/RedoxQL
+    - 1047223442 # repo:JakeRoggenbuck/kronicler
+    - 3017505 # repo:LucidDB/luciddb
+    - 828849220 # repo:OxidizeLabs/ferrite
+    - 1211492976 # repo:SouravRoy-ETL/slothdb
+    - 972754006 # repo:SwellDB/SwellDB
+    - 42580991 # repo:TIBCOSoftware/snappydata
+    - 16326644 # repo:akumuli/Akumuli
+    - 700017073 # repo:antoniosarosi/mkdb
+    - 644742603 # repo:apache/cloudberry
+    - 496505424 # repo:apache/horaedb
+    - 17971137 # repo:apache/incubator-tajo
+    - 757281035 # repo:ariasql/ariasql
+    - 1237465314 # repo:ayoubnabil/aiondb
+    - 1099507418 # repo:carlosbarbosamexico/narayana
+    - 173582015 # repo:cube2222/octosql
+    - 824462634 # repo:darshan117/BroSql
+    - 302827809 # repo:databendlabs/databend
+    - 1268325095 # repo:earonesty/lakeql
+    - 13887383 # repo:facebookarchive/webscalesql-5.6
+    - 148087762 # repo:georgia-tech-db/evadb
+    - 14753974 # repo:graemedouglas/LittleD
+    - 516821813 # repo:hydradatabase/columnar
+    - 1101734601 # repo:hyparam/squirreling
+    - 1243401750 # repo:infino-ai/infino
+    - 1174651148 # repo:kashyap-devansh/Ark
+    - 1193777419 # repo:lasect/discodb
+    - 780362035 # repo:maxnilz/sboxdb
+    - 999616035 # repo:multigres/multigres
+    - 460512584 # repo:mzinsmeister/OxidSQL
+    - 31960975 # repo:nukep/llamadb
+    - 1080442728 # repo:oceanbase/seekdb
+    - 813146214 # repo:open-gpdb/gpdb
+    - 95753144 # repo:quqiangsheng/abhot
+    - 5665061 # repo:radareorg/sdb
+    - 1254385987 # repo:shuruheel/mnestic
+    - 57401138 # repo:skaiworldwide-oss/agensgraph
+    - 1179701067 # repo:skel84/allocdb
+    - 1126115972 # repo:sochdb/sochdb
+    - 254418044 # repo:tigerbeetle/tigerbeetle
+    - 543276238 # repo:tursodatabase/libsql
+    - 683347556 # repo:tursodatabase/turso
+    - 646912783 # repo:ubco-db/EmbedDB
+    - 975757837 # repo:villagesql/villagesql-server
+    - 104114230 # repo:viyadb/viyadb
+    - 964004742 # repo:warehouse-pg/warehouse-pg

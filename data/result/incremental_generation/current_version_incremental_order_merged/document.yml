@@ -9,52 +9,65 @@ data:
     - 522606931 # repo:Anna-Team/AnnaDB
     - 396867188 # repo:ArcadeData/arcadedb
     - 1374129 # repo:BaseXdb/basex
+    - 234091935 # repo:DO-SAY-GO/sirdb
     - 8799170 # repo:DevrexLabs/OrigoDB
+    - 1234582852 # repo:ExtendDB/extenddb
     - 422821402 # repo:FerretDB/FerretDB
     - 605189726 # repo:FgForrest/evitaDB
     - 404610048 # repo:Fl1yd/LightDB
-    - 8313554 # repo:Greg0/Lazer-Database
     - 10296238 # repo:HouzuoGuo/tiedot
     - 19271154 # repo:JetBrains/xodus
     - 31315021 # repo:Kinto/kinto
+    - 8313554 # repo:Lazer-Database/Lazer-Database
     - 533032 # repo:LinkedInAttic/sensei
     - 750864017 # repo:Lona-Development/Server
+    - 1111440285 # repo:MauricioPerera/LOKIVECTOR
     - 50098469 # repo:Nexedi/neoppod
     - 1183612568 # repo:NodeDB-Lab/nodedb
     - 284225188 # repo:PoloDB/PoloDB
+    - 836018246 # repo:Schema-JS/schema-js
     - 188354257 # repo:SequoiaDB/SequoiaDB
+    - 129436009 # repo:SleekDB/SleekDB
     - 474070793 # repo:SnellerInc/sneller
     - 6427744 # repo:Softmotions/ejdb
+    - 8729689 # repo:Tokutek/mongo
+    - 813243891 # repo:Unconcurrent/SoloDB
+    - 1182378589 # repo:VincentKaufmann/GitDB
     - 8428443 # repo:X2rdas/easedb
     - 124315604 # repo:aerospike/aerospike-server
     - 31976266 # repo:apache/asterixdb
     - 206417 # repo:apache/couchdb
     - 5683653 # repo:apache/drill
+    - 223462217 # repo:apache/incubator-resilientdb
     - 341631350 # repo:apache/lucene
-    - 50229487 # repo:apache/lucene-solr
+    - 714074 # repo:apache/pouchdb
+    - 341374920 # repo:apache/solr
     - 114187903 # repo:apple/foundationdb
     - 137869753 # repo:appy-one/acebase
     - 2649214 # repo:arangodb/arangodb
     - 1085719788 # repo:ashfromsky/yaradb
     - 36778364 # repo:attic-labs/noms
+    - 249981301 # repo:aviondb/aviondb
     - 642912355 # repo:awa-ai/awadb
+    - 1296163320 # repo:barrel-db/barrel
     - 141378316 # repo:beardedeagle/mnesiac
     - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
     - 51290852 # repo:bigchaindb/bigchaindb
-    - 57401138 # repo:bitnine-oss/agensgraph
+    - 18893367 # repo:blevesearch/bleve
     - 127338417 # repo:bluzi/jsonstore
-    - 234091935 # repo:c9fe/sirdb
     - 844591313 # repo:capjamesg/jamesql
     - 639434928 # repo:cfu288/SylvieJS
+    - 138411034 # repo:chaisql/chai
     - 546206616 # repo:chroma-core/chroma
     - 13353426 # repo:cinchapi/concourse
     - 66783145 # repo:couchbase/couchbase-lite-core
     - 9342529 # repo:crate/crate
     - 722117815 # repo:cursusdb/cursusdb
-    - 249981301 # repo:dappkit/aviondb
+    - 270858421 # repo:datalevin/datalevin
     - 4732384 # repo:dcramer/mangodb
     - 88777477 # repo:dizitart/nitrite-database
+    - 920805662 # repo:documentdb/documentdb
     - 17684716 # repo:dsukhoroslov/bagri
     - 11695619 # repo:eXist-db/exist
     - 266444815 # repo:earthstar-project/earthstar
@@ -64,31 +77,33 @@ data:
     - 14143348 # repo:fakemongo/fongo
     - 679889516 # repo:fireproof-storage/fireproof
     - 305513242 # repo:fluree/db
-    - 138411034 # repo:genjidb/genji
     - 897888926 # repo:goatplatform/goatdb
     - 852516379 # repo:goshops-com/StormiDB
     - 285669400 # repo:graphikDB/graphik
     - 957143813 # repo:hash-anu/AnuDB
     - 12050336 # repo:hhblaze/DBreeze
     - 50836580 # repo:iboxdb/ftserver
+    - 1171244520 # repo:inder/salvobase
     - 4984118 # repo:ioquatix/relaxo
+    - 25364889 # repo:jbasiglio/fueldb
     - 58524063 # repo:jclo/picodb
     - 4859 # repo:jcrosby/cloudkit
     - 628503457 # repo:jdagdelen/hyperDB
     - 652189 # repo:jedisct1/Pincaster
     - 635374751 # repo:jina-ai/vectordb
     - 811062736 # repo:joswayski/averagedatabase
-    - 270858421 # repo:juji-io/datalevin
     - 632269609 # repo:kagisearch/vectordb
+    - 1230283259 # repo:katehonz/barabaDB
     - 1776883 # repo:kimchy/compass
     - 622856821 # repo:kronotop/kronotop
+    - 5844474 # repo:kurrent-io/KurrentDB
     - 607441698 # repo:lancedb/lancedb
     - 349172057 # repo:linkedin/venice
+    - 23315232 # repo:litedb-org/LiteDB
     - 376679845 # repo:losfair/RefineDB
     - 9795883 # repo:louischatriot/nedb
     - 520096046 # repo:marqo-ai/marqo
     - 661663226 # repo:maxnowack/signaldb
-    - 23315232 # repo:mbdavid/LiteDB
     - 130688011 # repo:meilisearch/meilisearch
     - 26573806 # repo:mgholam/RaptorDB-Document
     - 9595928 # repo:mirage/irmin
@@ -96,38 +111,39 @@ data:
     - 108110 # repo:mongodb/mongo
     - 11380094 # repo:msiemens/tinydb
     - 5912693 # repo:ncannasse/castle
+    - 47479424 # repo:nucypher/zerodb
     - 33053071 # repo:oberasoftware/jasdb
     - 3788366 # repo:openlink/virtuoso-opensource
+    - 334274271 # repo:opensearch-project/OpenSearch
     - 298920362 # repo:oracle/nosql-java-sdk
-    - 48617634 # repo:orbitdb/orbit-db
+    - 48617634 # repo:orbitdb/orbitdb
     - 7083240 # repo:orientechnologies/orientdb
     - 453191009 # repo:ostafen/clover
     - 207457900 # repo:patx/kenobi
     - 2662146 # repo:patx/pickledb
     - 39519916 # repo:percona/percona-server-mongodb
     - 166387176 # repo:polypheny/Polypheny-DB
-    - 714074 # repo:pouchdb/pouchdb
     - 5349565 # repo:prestodb/presto
     - 10153163 # repo:priitj/whitedb
     - 75425073 # repo:pubkey/rxdb
     - 416174776 # repo:pysonDB/pysonDB-v2
     - 357707809 # repo:quickwit-oss/quickwit
     - 49412556 # repo:quickwit-oss/tantivy
-    - 5665061 # repo:radare/sdb
-    - 129436009 # repo:rakibtg/SleekDB
+    - 5665061 # repo:radareorg/sdb
     - 542714 # repo:ravendb/ravendb
     - 1917262 # repo:realm/realm-core
-    - 223462217 # repo:resilientdb/resilientdb
     - 6452529 # repo:rethinkdb/rethinkdb
     - 336867666 # repo:ribelo/doxa
     - 34056205 # repo:sachin-sinha/BangDB
-    - 664816265 # repo:scratchdata/ScratchDB
+    - 664816265 # repo:scratchdata/scratchdata
     - 5841618 # repo:sedna/sedna
     - 9525219 # repo:sergeyksv/tingodb
     - 4604367 # repo:sirixdb/sirix
+    - 57401138 # repo:skaiworldwide-oss/agensgraph
     - 295745510 # repo:small-tech/jsdb
     - 1087408719 # repo:sohzm/jasonisnthappy
     - 192631273 # repo:sourcenetwork/defradb
+    - 36992044 # repo:sphinxsearch/sphinx
     - 436658287 # repo:surrealdb/surrealdb
     - 22761491 # repo:symisc/unqlite
     - 911980 # repo:tarantool/tarantool
@@ -141,12 +157,10 @@ data:
     - 86339169 # repo:torodb/server
     - 184711 # repo:typicaljoe/taffydb
     - 18351848 # repo:typicode/lowdb
-    - 25364889 # repo:unnamed38/fueldb
     - 186332888 # repo:vearch/vearch
     - 634656527 # repo:vector5ai/vector5db
     - 60377070 # repo:vespa-engine/vespa
     - 735981 # repo:xapian/xapian
     - 125824259 # repo:xtdb/xtdb
     - 456549280 # repo:ydb-platform/ydb
-    - 574588439 # repo:ytsaurus/ytsaurus
-    - 47479424 # repo:zerodb/zerodb
+    - 1242559745 # repo:zaydmulani09/vecdb

@@ -1,0 +1,9 @@
+name: Database - Object Oriented
+type: Tech-1
+data:
+  github_repo:
+    - 396867188 # repo:ArcadeData/arcadedb
+    - 366298992 # repo:Log2n-io/Typhon
+    - 6433550 # repo:glycerine/shore-mt
+    - objectbox # not found
+    - 242776849 # repo:oracle/coherence

@@ -1,0 +1,7 @@
+name: Database - RDF
+type: Tech-1
+data:
+  github_repo:
+    - 27594187 # repo:ad-freiburg/qlever
+    - 43734923 # repo:apache/rya
+    - 133687025 # repo:oxigraph/oxigraph

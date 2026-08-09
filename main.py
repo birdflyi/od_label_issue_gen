@@ -22,9 +22,12 @@ if pkg_rootdir not in sys.path:  # 解决ipynb引用上层路径中的模块时�
     print('-- Add root directory "{}" to system path.'.format(pkg_rootdir))
 
 import copy
+import json
 import re
 import shutil
 import textwrap
+import urllib.error
+import urllib.request
 
 import pandas as pd
 
@@ -90,10 +93,11 @@ def get_klabel_vdatalist_dict(df, kv_colnames, multi_onehot_label_cols=True, df_
         df.set_index(k_colname, inplace=True)
         for each_groupby_idx in groupby_idxes:
             groupby_colname = groupby_colnames[each_groupby_idx]
-            filter = df[groupby_colname] != 0
+            mask = df[groupby_colname] != 0
             if df_dedup_base is not None and groupby_colname is not None:
-                filter = filter & (filter ^ base_filter(df_dedup_base, groupby_colname))  # use xor to deal with records not in df_dedup_base
-            group_dict[groupby_colname] = list(df[filter].index)
+                base_mask = base_filter(df_dedup_base, groupby_colname).reindex(df.index, fill_value=False)
+                mask = mask & (mask ^ base_mask)  # use xor to deal with records not in df_dedup_base
+            group_dict[groupby_colname] = list(df[mask].index)
     return group_dict
 
 
@@ -517,6 +521,77 @@ def update_issue_body_format_parse_github_id(ref_body_format_path, update_res_pa
     return
 
 
+def normalize_github_repo_name(repo_name):
+    repo_name = str(repo_name).strip()
+    repo_name = re.sub(r"^https?://github\.com/", "", repo_name)
+    repo_name = re.sub(r"^github\.com/", "", repo_name)
+    repo_name = repo_name.strip("/")
+    if repo_name.endswith(".git"):
+        repo_name = repo_name[:-4]
+    return "/".join(repo_name.split("/")[:2])
+
+
+def get_github_repo_id_from_api(repo_name, token=None, timeout=20):
+    repo_name = normalize_github_repo_name(repo_name)
+    url = f"https://api.github.com/repos/{repo_name}"
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "od_label_issue_gen",
+    }
+    token = token or os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    request = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return json.loads(response.read().decode("utf-8"))["id"]
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        raise RuntimeError(f"GitHub API request failed: {e.code} {e.reason}, url={url}") from e
+
+
+def gen_issue_body_format_parse_github_id_with_api(src_path, tar_path, encoding='utf-8'):
+    repo_line_pattern = re.compile(r"^(\s*)-\s+([^\s#]+)\s*$")
+    repo_id_cache = {}
+    total_count = 0
+    not_found_count = 0
+
+    with open(src_path, 'r', encoding=encoding) as f:
+        lines = f.readlines()
+
+    parsed_lines = []
+    for line in lines:
+        line_body = line.rstrip("\r\n")
+        linebreak = line[len(line_body):]
+        repo_line_match = repo_line_pattern.match(line_body)
+        if not repo_line_match:
+            parsed_lines.append(line)
+            continue
+
+        indent, repo_name = repo_line_match.groups()
+        repo_name = normalize_github_repo_name(repo_name)
+        if len(repo_name.split("/")) < 2:
+            repo_id_cache[repo_name] = None
+        elif repo_name not in repo_id_cache:
+            repo_id_cache[repo_name] = get_github_repo_id_from_api(repo_name)
+        repo_id = repo_id_cache[repo_name]
+        total_count += 1
+        if repo_id is None:
+            not_found_count += 1
+            parsed_lines.append(f"{indent}- {repo_name} # not found{linebreak}")
+        else:
+            parsed_lines.append(f"{indent}- {repo_id} # repo:{repo_name}{linebreak}")
+
+    tar_dir = os.path.dirname(tar_path)
+    if tar_dir and not os.path.isdir(tar_dir):
+        os.makedirs(tar_dir)
+    with open(tar_path, 'w', encoding=encoding) as f:
+        f.write(''.join(parsed_lines))
+    print(f"{tar_path} is saved! {total_count - not_found_count}/{total_count} repos found.")
+    return
+
+
 def get_all_label_records_parsed_dict_from_parsed_txt(parsed_txt_paths, sep="#====#"):
     pre_format_conf_kpattern_vstdreplacement = {
         "\n(- \\d+ # repo:([^\\s]+))": "\nREC::\\2[k:v]\\1",
@@ -841,6 +916,7 @@ if __name__ == '__main__':
         "dbfeatfusion_records_202604_automerged_manulabeled.csv",
         "dbfeatfusion_records_202605_automerged_manulabeled.csv",
         "dbfeatfusion_records_202606_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202607_automerged_manulabeled.csv",
     ]
     # dynamic settings
     idx_last_v = -2
@@ -917,20 +993,19 @@ if __name__ == '__main__':
                                                  last_v_path=last_v_issue_body_format_parse_github_id_path,
                                                  curr_inc_path=curr_inc_issue_body_format_parse_github_id_path)
     elif curr_stage == 1 and (not save_parsed_as_curr_inc_issue_body_format_parse_github_id):
-        raise Warning(f"Please Create data issue in open-digger with contents in {curr_inc_issue_body_format_txt_path}, "
-                      f"then save the bot comments into {curr_inc_issue_body_format_parse_github_id_path}! "
-                      f"\t\nFinally, set parse_github_id_str_to_yaml = True.")
+        gen_issue_body_format_parse_github_id_with_api(curr_inc_issue_body_format_txt_path,
+                                                       curr_inc_issue_body_format_parse_github_id_path,
+                                                       encoding=encoding)
     else:
         pass
 
     # ----------3. Auto-generate yaml for issue_body_format after parse-github-id----------
-    # issue_body_format_parse_github_id.txt is parsed by open-digger, here are steps should be done before:
-    #   1) Open an issue(e.g. [X-lab2017/open-digger#1245](https://github.com/X-lab2017/open-digger/issues/1245)) with contents in curr_inc_issue_body_format_txt_path = './issue_body_format.txt'
-    #   2) Create an issue comment "/parse-github-id". Bot(github-actions) will reply a parsed format, which will take a while.
-    #   3) Copy the parse-github-id content replyed by bot into file "issue_body_format_parse_github_id.txt"
-    #   4) Set save_parsed_as_curr_inc_issue_body_format_parse_github_id = True and run main.py
-    #   5) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
-    #   6) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
+    # issue_body_format_parse_github_id.txt is generated from the GitHub REST API.
+    #   0) Run stage 0 and Open an issue(e.g. [X-lab2017/open-digger#1245](https://github.com/X-lab2017/open-digger/issues/1245)) with contents in curr_inc_issue_body_format_txt_path = './issue_body_format.txt'
+    #   1) Run stage 1 to generate curr_inc_issue_body_format_txt_path and curr_inc_issue_body_format_parse_github_id_path
+    #   2) Set curr_stage = 2 and run main.py
+    #   3) Copy all the generated yaml file into "open-digger/labeled_data/technology/database", replace old files
+    #   4) Open a new pull request to [open-digger](https://github.com/X-lab2017/open-digger) to fix the issue created above.
     src_last_v_parsed_txt_path = os.path.join(last_v_dir, "issue_body_format_parse_github_id.txt")
     tar_last_v_parsed_txt_dir = last_v_dir
 

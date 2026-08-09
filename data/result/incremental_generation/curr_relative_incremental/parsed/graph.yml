@@ -1,0 +1,21 @@
+name: Database - Graph
+type: Tech-1
+data:
+  github_repo:
+    - 1096820313 # repo:GraphLite-AI/GraphLite
+    - 1244916331 # repo:IssunDB/issun-db
+    - 759929648 # repo:JetBrains/youtrackdb
+    - 27594187 # repo:ad-freiburg/qlever
+    - 1170374747 # repo:alibaba/neug
+    - 1182753977 # repo:antflydb/antfly
+    - 141376301 # repo:apache/hugegraph
+    - 1237465314 # repo:ayoubnabil/aiondb
+    - 590923204 # repo:estebanrfp/gdb
+    - 1230283259 # repo:katehonz/barabaDB
+    - 1201033913 # repo:nambok/mentedb
+    - 1242792159 # repo:namidb/namidb
+    - 133687025 # repo:oxigraph/oxigraph
+    - 57401138 # repo:skaiworldwide-oss/agensgraph
+    - 1126115972 # repo:sochdb/sochdb
+    - 1169046116 # repo:softmaxdata/engram
+    - 1164482810 # repo:yantrikos/yantrikdb
