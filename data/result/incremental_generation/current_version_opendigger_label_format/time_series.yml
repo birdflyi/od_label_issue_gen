@@ -7,8 +7,6 @@ data:
       repos:
         - id: 346976717
           name: 4paradigm/OpenMLDB
-        - id: 396867188
-          name: ArcadeData/arcadedb
         - id: 480217156
           name: GreptimeTeam/greptimedb
         - id: 89848289
@@ -33,8 +31,6 @@ data:
           name: hawkular/hawkular-metrics
         - id: 13124802
           name: influxdata/influxdb
-        - id: 8039659
-          name: kairosdb/kairosdb
         - id: 61153677
           name: m3db/m3
         - id: 584240610
@@ -47,8 +43,6 @@ data:
           name: prometheus/prometheus
         - id: 19257422
           name: questdb/questdb
-        - id: 10081109
-          name: rackerlabs/blueflood
         - id: 135549948
           name: radicalbit/NSDb
         - id: 441299511

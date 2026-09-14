@@ -3,7 +3,6 @@ type: Tech-1
 data:
   github_repo:
     - 346976717 # repo:4paradigm/OpenMLDB
-    - 396867188 # repo:ArcadeData/arcadedb
     - 480217156 # repo:GreptimeTeam/greptimedb
     - 89848289 # repo:KxSystems/kdb
     - 16189524 # repo:OpenNMS/newts
@@ -16,14 +15,12 @@ data:
     - 52420005 # repo:griddb/griddb
     - 17705626 # repo:hawkular/hawkular-metrics
     - 13124802 # repo:influxdata/influxdb
-    - 8039659 # repo:kairosdb/kairosdb
     - 61153677 # repo:m3db/m3
     - 584240610 # repo:machbase/neo-server
     - 5761553 # repo:oetiker/rrdtool-1.x
     - 507829396 # repo:openGemini/openGemini
     - 6838921 # repo:prometheus/prometheus
     - 19257422 # repo:questdb/questdb
-    - 10081109 # repo:rackerlabs/blueflood
     - 135549948 # repo:radicalbit/NSDb
     - 441299511 # repo:reductstore/reductstore
     - 50594316 # repo:senx/warp10-platform

@@ -5,8 +5,11 @@ data:
     - 396867188 # repo:ArcadeData/arcadedb
     - 1832551 # repo:CulturePlex/Sylva
     - 8799170 # repo:DevrexLabs/OrigoDB
+    - 1096820313 # repo:GraphLite-AI/GraphLite
     - 893031915 # repo:HelixDB/helix-db
+    - 1244916331 # repo:IssunDB/issun-db
     - 77385607 # repo:JanusGraph/janusgraph
+    - 759929648 # repo:JetBrains/youtrackdb
     - 1071734040 # repo:LadybugDB/ladybug
     - 1183612568 # repo:NodeDB-Lab/nodedb
     - 92834468 # repo:Pometry/Raphtory
@@ -15,19 +18,23 @@ data:
     - 1040715058 # repo:Relatude/Relatude.DB
     - 43494700 # repo:SparsityTechnologies/sparksee-server
     - 528766495 # repo:TuGraph-family/tugraph-db
+    - 27594187 # repo:ad-freiburg/qlever
+    - 1170374747 # repo:alibaba/neug
     - 22475123 # repo:amark/gun
+    - 1182753977 # repo:antflydb/antfly
     - 276293034 # repo:apache/age
     - 2282376 # repo:apache/giraph
-    - 141376301 # repo:apache/incubator-hugegraph
+    - 141376301 # repo:apache/hugegraph
     - 30449481 # repo:apache/tinkerpop
     - 2649214 # repo:arangodb/arangodb
-    - 57401138 # repo:bitnine-oss/agensgraph
+    - 1237465314 # repo:ayoubnabil/aiondb
     - 48451041 # repo:blazegraph/database
     - 511030127 # repo:ceramicstudio/js-composedb
     - 2672286 # repo:cosh/fallen-8
     - 41946572 # repo:degdb/degdb
     - 41349039 # repo:dgraph-io/dgraph
     - 402209532 # repo:dyedgreen/cqlite
+    - 590923204 # repo:estebanrfp/gdb
     - 668673665 # repo:falkordb/falkordb
     - 74678263 # repo:fanjinfei/grapheekdb
     - 305513242 # repo:fluree/db
@@ -35,20 +42,27 @@ data:
     - 207484782 # repo:gurneyalex/cubicweb
     - 38727503 # repo:hypergraphdb/hypergraphdb
     - 166429903 # repo:jssmith/stigdb
+    - 1230283259 # repo:katehonz/barabaDB
     - 65619619 # repo:krotik/eliasdb
     - 298763623 # repo:kuzudb/kuzu
     - 85236158 # repo:lambdazen/bitsy
     - 297302063 # repo:memgraph/memgraph
     - 81411018 # repo:microsoft/GraphEngine
+    - 1201033913 # repo:nambok/mentedb
+    - 1242792159 # repo:namidb/namidb
     - 6650539 # repo:neo4j/neo4j
     - 7083240 # repo:orientechnologies/orientdb
     - 1111263109 # repo:orneryd/NornicDB
+    - 133687025 # repo:oxigraph/oxigraph
     - 26917250 # repo:pkumod/gStore
     - 166387176 # repo:polypheny/Polypheny-DB
     - 131763823 # repo:quoll/asami
     - 383927661 # repo:ragedb/ragedb
     - 73235061 # repo:rayokota/hgraphdb
     - 1051002990 # repo:sanonone/kektordb
+    - 57401138 # repo:skaiworldwide-oss/agensgraph
+    - 1126115972 # repo:sochdb/sochdb
+    - 1169046116 # repo:softmaxdata/engram
     - 743502 # repo:sones/sones
     - 55578752 # repo:stellardb/StellarDB
     - 238509 # repo:stevedekorte/vertexdb
@@ -58,4 +72,4 @@ data:
     - 605999 # repo:twitter-archive/flockdb
     - 63110867 # repo:typedb/typedb
     - 146459443 # repo:vesoft-inc/nebula
-    - 759929648 # repo:youtrackdb/youtrackdb
+    - 1164482810 # repo:yantrikos/yantrikdb
