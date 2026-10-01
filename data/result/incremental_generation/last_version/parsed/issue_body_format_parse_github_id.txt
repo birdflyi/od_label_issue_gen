@@ -131,6 +131,7 @@ Repos:
 - 652189 # repo:jedisct1/Pincaster
 - 635374751 # repo:jina-ai/vectordb
 - 811062736 # repo:joswayski/averagedatabase
+- jsqldb/jsqldb # not found
 - 632269609 # repo:kagisearch/vectordb
 - 1230283259 # repo:katehonz/barabaDB
 - 1776883 # repo:kimchy/compass
@@ -361,6 +362,7 @@ Repos:
 - 791522 # repo:basho/riak_kv
 - 88422672 # repo:bergdb/bergdb
 - 2380364 # repo:berkeleydb/libdb
+- beryldb/beryldb # not found
 - 51290852 # repo:bigchaindb/bigchaindb
 - 15345331 # repo:boltdb/bolt
 - 320459354 # repo:bytedance/terarkdb
@@ -592,6 +594,7 @@ Repos:
 - 25225465 # repo:markmeeus/MarcelloDB
 - 160528020 # repo:mateusfreira/nun-db
 - 273564373 # repo:morecraf/Siaqodb
+- objectbox # not found
 - 242776849 # repo:oracle/coherence
 - 7083240 # repo:orientechnologies/orientdb
 - 37285717 # repo:pilgr/Paper

@@ -33,6 +33,7 @@ data:
     - 25225465 # repo:markmeeus/MarcelloDB
     - 160528020 # repo:mateusfreira/nun-db
     - 273564373 # repo:morecraf/Siaqodb
+    - objectbox # not found
     - 242776849 # repo:oracle/coherence
     - 7083240 # repo:orientechnologies/orientdb
     - 37285717 # repo:pilgr/Paper

@@ -92,6 +92,7 @@ data:
     - 652189 # repo:jedisct1/Pincaster
     - 635374751 # repo:jina-ai/vectordb
     - 811062736 # repo:joswayski/averagedatabase
+    - jsqldb/jsqldb # not found
     - 632269609 # repo:kagisearch/vectordb
     - 1230283259 # repo:katehonz/barabaDB
     - 1776883 # repo:kimchy/compass

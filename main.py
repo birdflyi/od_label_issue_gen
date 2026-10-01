@@ -491,30 +491,41 @@ def get_label_records_dict_from_issue_body_format(issue_body_format_path, pre_fo
     return label_records_dict
 
 
-def update_issue_body_format_parse_github_id(ref_body_format_path, update_res_path, last_v_path, curr_inc_path):
+def update_issue_body_format_parse_github_id(ref_body_format_path, update_res_path, last_v_path, curr_inc_path,
+                                             encoding='utf-8'):
     update_res_path = update_res_path or last_v_path
     sep = "#====#"
-    all_label_records_parsed_dict, _ = get_all_label_records_parsed_dict_from_parsed_txt([curr_inc_path, last_v_path], sep)
+    all_label_records_parsed_dict, _ = get_all_label_records_parsed_dict_from_parsed_txt(
+        [curr_inc_path, last_v_path], sep
+    )
 
     pre_format_conf_mini = {
         "\n- ([^\\s]+)": "\n\\1",
         "(\n?)Label: ([^\n]+)\n": f"\\1{sep}Label: \\2\n",
     }
+    repo_key_pattern = re.compile(r"^[^\s#/:]+(?:/[^\s#/:]+)?$")
     with open(ref_body_format_path, 'r', encoding=encoding) as f:
         s = f.read()
         for reg, repl in dict(pre_format_conf_mini).items():
             s = re.sub(r'{}'.format(reg), '{}'.format(repl), s)
-        c_rec_formatstrs = s.split(sep=sep)
-        for i in range(len(c_rec_formatstrs)):
-            c_rec_formatstr = c_rec_formatstrs[i]
-            c_record_keys = c_rec_formatstr.split('\n')
-            for j in range(len(c_record_keys)):
-                key = c_record_keys[j]
-                if key in all_label_records_parsed_dict.keys():
-                    c_record_keys[j] = all_label_records_parsed_dict[key]
-            c_rec_formatstr_parse_github_id = '\n'.join(c_record_keys)
-            c_rec_formatstrs[i] = c_rec_formatstr_parse_github_id
-        c_rec_formatstrs_parse_github_id = ''.join(c_rec_formatstrs)
+
+    c_rec_formatstrs = s.split(sep=sep)
+    for i in range(len(c_rec_formatstrs)):
+        c_record_keys = c_rec_formatstrs[i].split('\n')
+        for j in range(len(c_record_keys)):
+            key = c_record_keys[j]
+            stripped_key = key.strip()
+            leading_whitespace = key[:len(key) - len(key.lstrip())]
+            if stripped_key in all_label_records_parsed_dict:
+                c_record_keys[j] = leading_whitespace + all_label_records_parsed_dict[stripped_key]
+            elif (
+                stripped_key
+                and repo_key_pattern.fullmatch(stripped_key)
+            ):
+                c_record_keys[j] = leading_whitespace + format_github_repo_record(stripped_key)
+        c_rec_formatstrs[i] = '\n'.join(c_record_keys)
+    c_rec_formatstrs_parse_github_id = ''.join(c_rec_formatstrs)
+
     with open(update_res_path, 'w', encoding=encoding) as f:
         f.write(c_rec_formatstrs_parse_github_id)
     print(f"{update_res_path} is saved!")
@@ -549,6 +560,16 @@ def get_github_repo_id_from_api(repo_name, token=None, timeout=20):
         if e.code == 404:
             return None
         raise RuntimeError(f"GitHub API request failed: {e.code} {e.reason}, url={url}") from e
+
+
+def format_github_repo_record(repo_name):
+    repo_name = normalize_github_repo_name(repo_name)
+    if len(repo_name.split("/")) < 2:
+        return f"- {repo_name} # not found"
+    repo_id = get_github_repo_id_from_api(repo_name)
+    if repo_id is None:
+        return f"- {repo_name} # not found"
+    return f"- {repo_id} # repo:{repo_name}"
 
 
 def gen_issue_body_format_parse_github_id_with_api(src_path, tar_path, encoding='utf-8'):
@@ -918,6 +939,7 @@ if __name__ == '__main__':
         "dbfeatfusion_records_202606_automerged_manulabeled.csv",
         "dbfeatfusion_records_202607_automerged_manulabeled.csv",
         "dbfeatfusion_records_202608_automerged_manulabeled.csv",
+        "dbfeatfusion_records_202609_automerged_manulabeled.csv",
     ]
     # dynamic settings
     idx_last_v = -2
@@ -980,10 +1002,9 @@ if __name__ == '__main__':
     else:
         pass
 
-    # ------------------------2. Create data issue in open-digger--------------------------
-    #  e.g. [X-lab2017/open-digger#1245](https://github.com/X-lab2017/open-digger/issues/1245)
-    #  Save content generated with `/parse-github-id` option as "issue_body_format_parse_github_id.txt"
-    #  Then set save_parsed_as_curr_inc_issue_body_format_parse_github_id = True
+    # ------------------------2. Generate parsed GitHub repo ids--------------------------
+    # Stage 0 reuses existing parsed records and queries the GitHub REST API for unmatched
+    # repo lines. Unavailable repositories are kept as "- repo # not found".
     last_v_issue_body_format_parse_github_id_path = os.path.join(last_v_dir, "issue_body_format_parse_github_id.txt")
     curr_inc_issue_body_format_txt_path = os.path.join(BASE_DIR, 'data/result/incremental_generation/curr_relative_incremental/issue_body_format.txt')
     curr_inc_dir = os.path.join(os.path.dirname(curr_inc_issue_body_format_txt_path), "parsed")
@@ -992,7 +1013,8 @@ if __name__ == '__main__':
         update_issue_body_format_parse_github_id(last_v_issue_body_format_txt_path,
                                                  last_v_issue_body_format_parse_github_id_path,
                                                  last_v_path=last_v_issue_body_format_parse_github_id_path,
-                                                 curr_inc_path=curr_inc_issue_body_format_parse_github_id_path)
+                                                 curr_inc_path=curr_inc_issue_body_format_parse_github_id_path,
+                                                 encoding=encoding)
     elif curr_stage == 1 and (not save_parsed_as_curr_inc_issue_body_format_parse_github_id):
         gen_issue_body_format_parse_github_id_with_api(curr_inc_issue_body_format_txt_path,
                                                        curr_inc_issue_body_format_parse_github_id_path,
