@@ -2,4 +2,5 @@ name: Database - Columnar
 type: Tech-1
 data:
   github_repo:
+    - 60246359 # repo:ClickHouse/ClickHouse
     - 170496871 # repo:gridgain/gridgain

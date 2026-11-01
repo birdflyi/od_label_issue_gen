@@ -81,12 +81,16 @@ data:
           name: gchq/Gaffer
         - id: 207484782
           name: gurneyalex/cubicweb
+        - id: 1287908540
+          name: hydra-db/hydradb
         - id: 38727503
           name: hypergraphdb/hypergraphdb
         - id: 166429903
           name: jssmith/stigdb
         - id: 1230283259
           name: katehonz/barabaDB
+        - id: 1278216455
+          name: katsut/stromadb
         - id: 65619619
           name: krotik/eliasdb
         - id: 298763623
@@ -119,6 +123,8 @@ data:
           name: ragedb/ragedb
         - id: 73235061
           name: rayokota/hgraphdb
+        - id: 903680048
+          name: rush-db/rushdb
         - id: 1051002990
           name: sanonone/kektordb
         - id: 57401138

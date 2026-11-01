@@ -839,6 +839,7 @@ Repos:
 - rqlite/rqlite
 - ryenus/hsqldb
 - sameeragarwal/blinkdb
+- serenedb/serenedb
 - shuruheel/mnestic
 - sirius-db/sirius
 - skaiworldwide-oss/agensgraph

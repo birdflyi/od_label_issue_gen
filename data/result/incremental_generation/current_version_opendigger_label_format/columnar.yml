@@ -5,5 +5,7 @@ data:
     - name: GitHub
       type: Code Hosting
       repos:
+        - id: 60246359
+          name: ClickHouse/ClickHouse
         - id: 170496871
           name: gridgain/gridgain

@@ -31,8 +31,10 @@ data:
     - 635374751 # repo:jina-ai/vectordb
     - 1210826829 # repo:jose-compu/logosdb
     - 632269609 # repo:kagisearch/vectordb
+    - 1278216455 # repo:katsut/stromadb
     - 242383787 # repo:marekgalovic/anndb
     - 520096046 # repo:marqo-ai/marqo
+    - 1361742183 # repo:mchl-labs/chronovec
     - 208728772 # repo:milvus-io/milvus
     - 1201033913 # repo:nambok/mentedb
     - 1108658403 # repo:nubskr/satoriDB
@@ -40,6 +42,7 @@ data:
     - 1080442728 # repo:oceanbase/seekdb
     - 735283134 # repo:philippgille/chromem-go
     - 268163609 # repo:qdrant/qdrant
+    - 903680048 # repo:rush-db/rushdb
     - 1126115972 # repo:sochdb/sochdb
     - 195619075 # repo:vdaas/vald
     - 186332888 # repo:vearch/vearch

@@ -1,8 +1,48 @@
+Label: Columnar
+
+Type: Tech-1
+
+Repos:
+
+- 60246359 # repo:ClickHouse/ClickHouse
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- 1287908540 # repo:hydra-db/hydradb
+- 1278216455 # repo:katsut/stromadb
+- 903680048 # repo:rush-db/rushdb
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- 432666326 # repo:camusdb/camusdb
+- 411333835 # repo:prakis/keyval
+- 903680048 # repo:rush-db/rushdb
+
 Label: Relational
 
 Type: Tech-1
 
 Repos:
 
-- 1048068299 # repo:serenedb/serenedb
+- 432666326 # repo:camusdb/camusdb
+- 1290297103 # repo:kocoygroup-id/AsaDB
+- 370529505 # repo:polardb/PolarDB-for-PostgreSQL
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- 1278216455 # repo:katsut/stromadb
+- 1361742183 # repo:mchl-labs/chronovec
+- 903680048 # repo:rush-db/rushdb
 

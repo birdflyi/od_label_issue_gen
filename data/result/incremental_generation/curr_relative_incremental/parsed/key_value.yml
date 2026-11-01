@@ -1,0 +1,7 @@
+name: Database - Key-value
+type: Tech-1
+data:
+  github_repo:
+    - 432666326 # repo:camusdb/camusdb
+    - 411333835 # repo:prakis/keyval
+    - 903680048 # repo:rush-db/rushdb

@@ -1,8 +1,48 @@
+Label: Columnar
+
+Type: Tech-1
+
+Repos:
+
+- ClickHouse/ClickHouse
+
+Label: Graph
+
+Type: Tech-1
+
+Repos:
+
+- hydra-db/hydradb
+- katsut/stromadb
+- rush-db/rushdb
+
+Label: Key-value
+
+Type: Tech-1
+
+Repos:
+
+- camusdb/camusdb
+- prakis/keyval
+- rush-db/rushdb
+
 Label: Relational
 
 Type: Tech-1
 
 Repos:
 
-- serenedb/serenedb
+- camusdb/camusdb
+- kocoygroup-id/AsaDB
+- polardb/PolarDB-for-PostgreSQL
+
+Label: Vector
+
+Type: Tech-1
+
+Repos:
+
+- katsut/stromadb
+- mchl-labs/chronovec
+- rush-db/rushdb
 

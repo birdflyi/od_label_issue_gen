@@ -40,9 +40,11 @@ data:
     - 305513242 # repo:fluree/db
     - 47973088 # repo:gchq/Gaffer
     - 207484782 # repo:gurneyalex/cubicweb
+    - 1287908540 # repo:hydra-db/hydradb
     - 38727503 # repo:hypergraphdb/hypergraphdb
     - 166429903 # repo:jssmith/stigdb
     - 1230283259 # repo:katehonz/barabaDB
+    - 1278216455 # repo:katsut/stromadb
     - 65619619 # repo:krotik/eliasdb
     - 298763623 # repo:kuzudb/kuzu
     - 85236158 # repo:lambdazen/bitsy
@@ -59,6 +61,7 @@ data:
     - 131763823 # repo:quoll/asami
     - 383927661 # repo:ragedb/ragedb
     - 73235061 # repo:rayokota/hgraphdb
+    - 903680048 # repo:rush-db/rushdb
     - 1051002990 # repo:sanonone/kektordb
     - 57401138 # repo:skaiworldwide-oss/agensgraph
     - 1126115972 # repo:sochdb/sochdb

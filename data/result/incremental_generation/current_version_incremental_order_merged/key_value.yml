@@ -57,11 +57,11 @@ data:
     - 791522 # repo:basho/riak_kv
     - 88422672 # repo:bergdb/bergdb
     - 2380364 # repo:berkeleydb/libdb
-    - beryldb/beryldb # not found
     - 51290852 # repo:bigchaindb/bigchaindb
     - 15345331 # repo:boltdb/bolt
     - 320459354 # repo:bytedance/terarkdb
     - 33275300 # repo:cachelot/cachelot
+    - 432666326 # repo:camusdb/camusdb
     - 1196286 # repo:cbd/edis
     - 150013328 # repo:cberner/redb
     - 747399975 # repo:chromodb/chromodb
@@ -155,6 +155,7 @@ data:
     - 37285717 # repo:pilgr/Paper
     - 41986369 # repo:pingcap/tidb
     - 12843155 # repo:pmwkaa/sophia
+    - 411333835 # repo:prakis/keyval
     - 5349565 # repo:prestodb/presto
     - 6838921 # repo:prometheus/prometheus
     - 542714 # repo:ravendb/ravendb
@@ -171,6 +172,7 @@ data:
     - 9847951 # repo:robmerrell/hipsterdb
     - 345739 # repo:roma/roma
     - 318972528 # repo:rosedblabs/rosedb
+    - 903680048 # repo:rush-db/rushdb
     - 779811016 # repo:sabledb-io/sabledb
     - 34056205 # repo:sachin-sinha/BangDB
     - 354659748 # repo:saurabh0719/elara

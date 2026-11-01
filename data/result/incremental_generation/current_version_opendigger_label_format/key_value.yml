@@ -123,6 +123,8 @@ data:
           name: bytedance/terarkdb
         - id: 33275300
           name: cachelot/cachelot
+        - id: 432666326
+          name: camusdb/camusdb
         - id: 1196286
           name: cbd/edis
         - id: 150013328
@@ -309,6 +311,8 @@ data:
           name: pingcap/tidb
         - id: 12843155
           name: pmwkaa/sophia
+        - id: 411333835
+          name: prakis/keyval
         - id: 5349565
           name: prestodb/presto
         - id: 6838921
@@ -341,6 +345,8 @@ data:
           name: roma/roma
         - id: 318972528
           name: rosedblabs/rosedb
+        - id: 903680048
+          name: rush-db/rushdb
         - id: 779811016
           name: sabledb-io/sabledb
         - id: 34056205

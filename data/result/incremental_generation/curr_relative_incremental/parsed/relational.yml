@@ -2,4 +2,6 @@ name: Database - Relational
 type: Tech-1
 data:
   github_repo:
-    - 1048068299 # repo:serenedb/serenedb
+    - 432666326 # repo:camusdb/camusdb
+    - 1290297103 # repo:kocoygroup-id/AsaDB
+    - 370529505 # repo:polardb/PolarDB-for-PostgreSQL

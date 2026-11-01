@@ -203,6 +203,7 @@ data:
     - 23247808 # repo:rqlite/rqlite
     - 101723057 # repo:ryenus/hsqldb
     - 2529750 # repo:sameeragarwal/blinkdb
+    - 1048068299 # repo:serenedb/serenedb
     - 1254385987 # repo:shuruheel/mnestic
     - 817507312 # repo:sirius-db/sirius
     - 57401138 # repo:skaiworldwide-oss/agensgraph

@@ -1,0 +1,7 @@
+name: Database - Graph
+type: Tech-1
+data:
+  github_repo:
+    - 1287908540 # repo:hydra-db/hydradb
+    - 1278216455 # repo:katsut/stromadb
+    - 903680048 # repo:rush-db/rushdb

@@ -63,10 +63,14 @@ data:
           name: jose-compu/logosdb
         - id: 632269609
           name: kagisearch/vectordb
+        - id: 1278216455
+          name: katsut/stromadb
         - id: 242383787
           name: marekgalovic/anndb
         - id: 520096046
           name: marqo-ai/marqo
+        - id: 1361742183
+          name: mchl-labs/chronovec
         - id: 208728772
           name: milvus-io/milvus
         - id: 1201033913
@@ -81,6 +85,8 @@ data:
           name: philippgille/chromem-go
         - id: 268163609
           name: qdrant/qdrant
+        - id: 903680048
+          name: rush-db/rushdb
         - id: 1126115972
           name: sochdb/sochdb
         - id: 195619075

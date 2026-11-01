@@ -185,6 +185,7 @@ data:
           name: jina-ai/vectordb
         - id: 811062736
           name: joswayski/averagedatabase
+    - jsqldb/jsqldb # not found
         - id: 632269609
           name: kagisearch/vectordb
         - id: 1230283259

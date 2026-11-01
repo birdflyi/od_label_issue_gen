@@ -85,6 +85,7 @@ data:
     - 141378316 # repo:beardedeagle/mnesiac
     - 16109206 # repo:biokoda/actordb
     - 91593042 # repo:bloomberg/comdb2
+    - 432666326 # repo:camusdb/camusdb
     - 92329433 # repo:canonical/dqlite
     - 1099507418 # repo:carlosbarbosamexico/narayana
     - 372181547 # repo:cashapp/pranadb
@@ -148,6 +149,7 @@ data:
     - 1174651148 # repo:kashyap-devansh/Ark
     - 371172777 # repo:kelindar/column
     - 199466858 # repo:kkuchta/tabdb
+    - 1290297103 # repo:kocoygroup-id/AsaDB
     - 1193777419 # repo:lasect/discodb
     - 591417438 # repo:launix-de/memcp
     - 7502247 # repo:lealone/Lealone
@@ -186,6 +188,7 @@ data:
     - 14702444 # repo:pipelinedb/pipelinedb
     - 618452402 # repo:plabayo/venndb
     - 510607652 # repo:pocketbase/pocketbase
+    - 370529505 # repo:polardb/PolarDB-for-PostgreSQL
     - 166387176 # repo:polypheny/Polypheny-DB
     - 927442 # repo:postgres/postgres
     - 258454329 # repo:ppml38/icecoal
